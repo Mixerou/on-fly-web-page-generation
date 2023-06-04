@@ -1,0 +1,23 @@
+# Project
+bin/
+debug/
+target/
+**/*.rs.bk
+*.pdb
+.env
+wasm-pack.log
+
+# `pkg` Directory
+pkg/.gitignore
+
+# JetBrains
+.fleet/
+.idea/
+
+# VS Code
+.vscode/
+
+# MacOS
+.AppleDouble
+.DS_Store
+.LSOverride

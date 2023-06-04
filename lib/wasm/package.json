@@ -1,0 +1,26 @@
+{
+  "name": "on-the-fly-web-page-generation-lib",
+  "collaborators": [
+    "Ivan <contact@mixero.dev>"
+  ],
+  "description": "On The Fly Web Page Generation project library",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mixerou/on-the-fly-web-page-generation"
+  },
+  "files": [
+    "on_the_fly_web_page_generation_lib_bg.wasm",
+    "on_the_fly_web_page_generation_lib.js",
+    "on_the_fly_web_page_generation_lib_bg.js",
+    "on_the_fly_web_page_generation_lib.d.ts"
+  ],
+  "module": "on_the_fly_web_page_generation_lib.js",
+  "homepage": "https://github.com/Mixerou/on-the-fly-web-page-generation/tree/main/lib",
+  "types": "on_the_fly_web_page_generation_lib.d.ts",
+  "sideEffects": [
+    "./on_the_fly_web_page_generation_lib.js",
+    "./snippets/*"
+  ]
+}

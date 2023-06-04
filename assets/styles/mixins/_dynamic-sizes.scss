@@ -1,0 +1,15 @@
+@mixin dvw($property, $size) {
+  #{$property}: #{$size}vw;
+
+  @supports (#{$property}: #{$size}dvw) {
+    #{$property}: #{$size}dvw;
+  }
+}
+
+@mixin dvh($property, $size) {
+  #{$property}: #{$size}vh;
+
+  @supports (#{$property}: #{$size}dvh) {
+    #{$property}: #{$size}dvh;
+  }
+}
