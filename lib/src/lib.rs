@@ -6,7 +6,7 @@ pub fn greet(name: &str) -> String {
 }
 
 #[cfg(test)]
-mod test {
+mod tests {
     use wasm_bindgen_test::*;
 
     use super::*;
