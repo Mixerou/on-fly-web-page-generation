@@ -1,7 +1,7 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
-* @param {string} name
+* @param {string} pug
 * @returns {string}
 */
-export function greet(name: string): string;
+export function convert_pug_to_json(pug: string): string;

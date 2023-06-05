@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { greet } from 'on-the-fly-web-page-generation-lib'
+import { convert_pug_to_json } from 'on-the-fly-web-page-generation-lib'
 
-console.log(greet('World'))
+const json = JSON.parse(convert_pug_to_json('h1 Home page'))
 </script>
 
 <template>
   <div class="content">
-    <h1>Home page</h1>
+    <Component :is="json.children[0].name">
+      {{ json.children[0].children[0] }}
+    </Component>
   </div>
 </template>
 
