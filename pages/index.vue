@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { convert_pug_to_json } from 'on-the-fly-web-page-generation-lib'
+import { convertPugToJson } from 'on-the-fly-web-page-generation-lib'
 
-const json = JSON.parse(convert_pug_to_json('h1 Home page'))
+const json = JSON.parse(convertPugToJson('h1 Home page'))
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 use html_parser::Dom;
 use wasm_bindgen::prelude::*;
 
-#[wasm_bindgen]
+#[wasm_bindgen(js_name = convertPugToJson)]
 pub fn convert_pug_to_json(pug: &str) -> String {
     let mut html = Vec::new();
 
