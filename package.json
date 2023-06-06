@@ -18,7 +18,7 @@
     "dev": "nuxt dev",
     "preview": "nuxt preview",
     "build": "nuxt build",
-    "lint:eslint": "eslint --ext \".js,.vue\" .",
+    "lint:eslint": "eslint --ext \".js,.ts,.vue\" .",
     "lint:prettier": "prettier --check .",
     "plint": "pnpm run lint:eslint && pnpm run lint:prettier",
     "plint:fix": "pnpm run lint:eslint --fix && prettier --write --list-different ."
@@ -27,6 +27,7 @@
     "on-the-fly-web-page-generation-lib": "link:lib\\wasm"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@types/node": "^18.16.16",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
