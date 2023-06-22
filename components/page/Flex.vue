@@ -23,7 +23,7 @@ const props = defineProps({
       | 'unsafe center'
     >,
     required: false,
-    default: 'row',
+    default: 'start',
   },
   alignItems: {
     type: String as PropType<
