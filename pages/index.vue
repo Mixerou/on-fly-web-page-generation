@@ -5,17 +5,11 @@ const json = JSON.parse(convertPugToJson('h1 Home page'))
 </script>
 
 <template>
-  <div class="content">
+  <PageFlex direction="column" justify-content="center" expanded>
     <Component :is="json.children[0].name">
       {{ json.children[0].children[0] }}
     </Component>
-  </div>
+  </PageFlex>
 </template>
 
-<style scoped lang="scss">
-.content {
-  display: flex;
-  align-items: center;
-  @include dvh(height, 100);
-}
-</style>
+<style scoped lang="scss"></style>

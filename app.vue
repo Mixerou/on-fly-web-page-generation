@@ -36,6 +36,16 @@ body {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--neutral-900);
+  transition: var(--fast-transition-duration);
+}
+
 h1 {
   line-height: var(--4xl-line-height);
   font-size: var(--4xl-font-size);

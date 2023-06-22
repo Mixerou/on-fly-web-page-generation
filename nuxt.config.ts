@@ -34,6 +34,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  imports: {
+    dirs: ['./hooks'],
+  },
   typescript: {
     typeCheck: true,
     strict: true,
