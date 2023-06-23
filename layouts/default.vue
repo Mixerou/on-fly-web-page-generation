@@ -11,13 +11,11 @@
 <style lang="scss" scoped>
 #default-layout {
   width: 100%;
+  height: 100%;
 
-  .layout-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  main {
     width: 100%;
-    height: fit-content;
+    height: 100%;
   }
 }
 </style>
