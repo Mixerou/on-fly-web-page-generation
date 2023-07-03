@@ -6,6 +6,10 @@ defineProps({
   },
 })
 
+useHead({
+  title: 'Error',
+})
+
 onUnmounted(() => clearError({}))
 </script>
 
@@ -17,7 +21,11 @@ onUnmounted(() => clearError({}))
     :gap="1"
     expanded
   >
-    <PageHeading>Page Not Found</PageHeading>
+    <PageHeading v-if="error.statusCode === 404">Page Not Found</PageHeading>
+    <PageHeading v-else>{{ error.statusCode }}</PageHeading>
+    <PageText v-if="error.statusCode !== 404">
+      {{ error.statusMessage }}
+    </PageText>
     <PageLink to="/">Go back</PageLink>
   </PageFlex>
 </template>
